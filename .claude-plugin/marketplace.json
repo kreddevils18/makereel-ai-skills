@@ -1,0 +1,16 @@
+{
+  "name": "makereel",
+  "owner": {
+    "name": "Makereel AI",
+    "url": "https://makereel.kienhoang.me"
+  },
+  "plugins": [
+    {
+      "name": "makereel",
+      "source": "./",
+      "description": "Create editable slideshows with your own images, review the plan, and approve before creation.",
+      "version": "2.2.0",
+      "skills": ["./makereel-generate"]
+    }
+  ]
+}

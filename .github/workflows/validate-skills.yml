@@ -1,0 +1,29 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Verify skill discovery
+        run: npx --yes skills@1.7.0 add . --list
+      - name: Validate plugin metadata
+        run: |
+          node --input-type=module <<'NODE'
+            import { readFileSync, existsSync } from "node:fs";
+            const plugin = JSON.parse(readFileSync(".claude-plugin/plugin.json"));
+            const marketplace = JSON.parse(readFileSync(".claude-plugin/marketplace.json"));
+            const codex = JSON.parse(readFileSync(".codex-plugin/plugin.json"));
+            if (plugin.version !== codex.version || plugin.version !== marketplace.plugins[0].version) throw new Error("Plugin versions disagree");
+            for (const skill of plugin.skills) if (!existsSync(`${skill}/SKILL.md`)) throw new Error(`Missing skill: ${skill}`);
+          NODE

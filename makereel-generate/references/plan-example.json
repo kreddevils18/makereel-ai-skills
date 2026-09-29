@@ -1,0 +1,63 @@
+[
+  {
+    "scene": {
+      "version": 1,
+      "width": 1080,
+      "height": 1920,
+      "background": "#18181b",
+      "elements": [
+        {
+          "id": "cover-image",
+          "type": "image",
+          "geometry": { "x": 0, "y": 0, "width": 1080, "height": 1920, "rotation": 0, "opacity": 1 },
+          "image": { "assetId": "approved-cover-asset-id", "kind": "background" }
+        },
+        {
+          "id": "cover-hook",
+          "type": "text",
+          "text": "Make room for a calmer morning",
+          "textRole": "hook-text",
+          "textKind": "headline",
+          "geometry": { "x": 90, "y": 360, "width": 900, "height": 360, "rotation": 0, "opacity": 1 },
+          "style": { "fontFamily": "Outfit", "fontSize": 80, "fontWeight": 700, "fontStyle": "normal", "fill": "#ffffff", "align": "center", "background": { "color": "#18181b", "paddingX": 24, "paddingY": 20, "cornerRadius": 16 } }
+        }
+      ]
+    },
+    "altText": "Morning sunlight falling across a clear wooden desk beside a window."
+  },
+  {
+    "scene": {
+      "version": 1,
+      "width": 1080,
+      "height": 1920,
+      "background": "#18181b",
+      "elements": [
+        {
+          "id": "body-image",
+          "type": "image",
+          "geometry": { "x": 0, "y": 0, "width": 1080, "height": 1920, "rotation": 0, "opacity": 1 },
+          "image": { "assetId": "approved-body-asset-id", "kind": "background" }
+        },
+        {
+          "id": "body-title",
+          "type": "text",
+          "text": "Choose one small priority",
+          "textRole": "content-text",
+          "textKind": "headline",
+          "geometry": { "x": 90, "y": 280, "width": 900, "height": 260, "rotation": 0, "opacity": 1 },
+          "style": { "fontFamily": "Outfit", "fontSize": 72, "fontWeight": 700, "fontStyle": "normal", "fill": "#ffffff", "align": "left", "background": { "color": "#18181b", "paddingX": 24, "paddingY": 20, "cornerRadius": 16 } }
+        },
+        {
+          "id": "body-copy",
+          "type": "text",
+          "text": "Write down one useful thing you can finish before opening your inbox.",
+          "textRole": "content-text",
+          "textKind": "paragraph",
+          "geometry": { "x": 90, "y": 650, "width": 900, "height": 400, "rotation": 0, "opacity": 1 },
+          "style": { "fontFamily": "Outfit", "fontSize": 56, "fontWeight": 400, "fontStyle": "normal", "fill": "#ffffff", "align": "left", "background": { "color": "#18181b", "paddingX": 24, "paddingY": 20, "cornerRadius": 16 } }
+        }
+      ]
+    },
+    "altText": "An open notebook and pen on a wooden desk in natural light."
+  }
+]

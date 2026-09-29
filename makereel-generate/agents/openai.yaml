@@ -1,0 +1,4 @@
+interface:
+  display_name: "Makereel Generate"
+  short_description: "Approved Scratch and Social carousels through CLI or MCP"
+  default_prompt: "Use Makereel to plan a Scratch or Social carousel. Show me the full plan and wait for my approval before creating it; get separate approval before analyzing a Social source."
