@@ -1,0 +1,4 @@
+interface:
+  display_name: "Makereel Avatars"
+  short_description: "Consistent personas from character collections"
+  default_prompt: "Use Makereel to help me set up or use an Avatar (character collection) for a recurring persona. Do not upload or import any image without my approval."

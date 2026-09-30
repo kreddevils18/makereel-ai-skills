@@ -3,7 +3,7 @@ name: generate
 description: Create, inspect and internally schedule editable Makereel carousels through the authenticated CLI or MCP tools. Use for Scratch slides, Social creation from a TikTok URL or curated Viral Post, website-to-slide briefs, workspace analytics, tạo carousel and đặt lịch. Present the complete plan and wait for explicit human approval before importing images or creating a carousel; confirm source analysis separately. Not for AI image synthesis, Pinterest keyword search, TikTok analytics or social publishing.
 argument-hint: "[carousel brief]"
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
 # Makereel Generate
@@ -11,6 +11,8 @@ metadata:
 Create exactly one editable slideshow per job using **Scratch** or **Social**. Scratch supplies complete, explicitly authored scenes and chosen assets. Social analyzes a TikTok URL or a system-curated Viral Post, then creates one slideshow from reviewed copy inputs and explicit image bindings. Users can browse Viral Posts, not create them.
 
 For existing carousel status or scheduling, bootstrap then go directly to **Inspect or schedule an existing carousel**; do not generate a replacement. For reporting, use **Internal analytics**. Creation alone does not export, schedule or publish.
+
+This skill owns the command contract and approval gates. Companion skills plan on top of it: **slideshows** for deck archetype, copy, image casting and layout; **campaign** for strategy and a dated calendar of carousels; **avatars** for recurring personas stored as character collections. Their outputs still pass through the plans and approvals below.
 
 ## Bootstrap
 

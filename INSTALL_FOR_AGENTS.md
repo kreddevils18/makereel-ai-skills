@@ -6,7 +6,7 @@ Help the user connect their AI assistant to Makereel without a development envir
 2. Run `makereel auth status`. Only if sign-in is needed, ask the user to complete `makereel auth login` in their terminal and approve the browser device code. Never read or request passwords, tokens, cookies, or credential files.
 3. Confirm that the public `kreddevils18/makereel-ai-skills` repository is accessible. If it is not, report that skill installation is unavailable; do not substitute a different repository. Otherwise install using one method:
    - Claude Code: run `claude plugin marketplace add kreddevils18/makereel-ai-skills`, then `claude plugin install makereel@makereel`.
-   - Other supported agents with Node.js/npm: run `npx skills add kreddevils18/makereel-ai-skills --skill generate --global` and select the user's agent. In Windows PowerShell, if the shell blocks the npm script shim, use `npx.cmd` rather than weakening the execution policy.
+   - Other supported agents with Node.js/npm: run `npx skills add kreddevils18/makereel-ai-skills --skill '*' --global` (or `--skill generate` when the user wants only that skill) and select the user's agent. In Windows PowerShell, if the shell blocks the npm script shim, use `npx.cmd` rather than weakening the execution policy.
 4. Restart or reload the assistant if required. For a client using local MCP instead of CLI commands, follow the bundled setup reference using the installed executable's absolute path and `mcp` argument.
 5. Verify with `makereel auth status` and `makereel profiles list`. These are read-only checks. Do not create a sample slideshow, import media, analyze a post, or schedule as an installation test.
 

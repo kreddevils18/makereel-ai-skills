@@ -1,0 +1,4 @@
+interface:
+  display_name: "Makereel Campaign"
+  short_description: "Campaign strategy and dated carousel calendar"
+  default_prompt: "Use Makereel to plan a content campaign: read my accounts and Library, propose a strategy and dated carousel calendar, and wait for my approval. Do not create, import, analyze, or schedule anything yet."

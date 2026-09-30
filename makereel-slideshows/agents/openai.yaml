@@ -1,0 +1,4 @@
+interface:
+  display_name: "Makereel Slideshows"
+  short_description: "Art-directed hooks, copy, images and layouts"
+  default_prompt: "Use Makereel to art-direct a carousel: choose the archetype, write the hook and slide copy, cast images from my Library, and show me the full plan before creating anything."
