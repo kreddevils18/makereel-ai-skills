@@ -6,7 +6,7 @@ You need a Makereel account, images in your Library, and an AI assistant that ca
 
 The Makereel CLI is the small connector your assistant uses to work with your account.
 
-**Release availability:** the creator installers have not been publicly released yet. The skill is available from [kreddevils18/makereel-ai-skills](https://github.com/kreddevils18/makereel-ai-skills), but a new assistant connection also needs the released connector. Do not install an unrelated package with a similar name. The [official Quickstart](https://makereel.kienhoang.me/docs/quickstart) is the entry point for published download links when available.
+**Release availability:** the creator installers have not been publicly released yet. The skills are available from [kreddevils18/makereel-ai-skills](https://github.com/kreddevils18/makereel-ai-skills), but a new assistant connection also needs the released connector. Do not install an unrelated package with a similar name. The [official Quickstart](https://makereel.kienhoang.me/docs/quickstart) is the entry point for published download links when available.
 
 When a release is available, choose the installer matching your computer:
 
@@ -19,7 +19,7 @@ When a release is available, choose the installer matching your computer:
 
 Open the installer and follow its prompts. On Linux, use your distribution's package installer. Open a new terminal after installation so it recognizes the `makereel` command. An installer is not a separate graphical slideshow editor; editing happens in your browser.
 
-Homebrew, WinGet, and npm/npx commands must come from a published Makereel release. They are alternatives, not prerequisites. Installing the skill with `npx skills` does not install this connector.
+Homebrew, WinGet, and npm/npx commands must come from a published Makereel release. They are alternatives, not prerequisites. Installing the skills with `npx skills` does not install this connector.
 
 ## 2. Sign in
 
@@ -32,9 +32,9 @@ makereel auth login
 
 Follow the browser prompt, confirm the displayed device code, and approve the connection yourself. Do not give your assistant your password or a token. If no browser window opens, run `makereel auth login --no-browser` and open the link it prints.
 
-## 3. Install the skill
+## 3. Install the skills
 
-Follow the [README installation options](README.md#install-the-skill), then restart your assistant if requested.
+Follow the [README installation options](README.md#install-the-skills), then restart your assistant if requested.
 
 Ask the assistant:
 
@@ -58,11 +58,11 @@ To revoke this computer's saved Makereel connection:
 makereel auth logout
 ```
 
-Previously issued short-lived access may take up to five minutes to expire. Removing the skill or uninstalling the connector alone is not a substitute for signing out.
+Previously issued short-lived access may take up to five minutes to expire. Removing the skills or uninstalling the connector alone is not a substitute for signing out.
 
 ## Need help?
 
-- **Command not found / not recognized:** confirm the connector was installed, then open a new terminal. Installing just the skill is not enough.
+- **Command not found / not recognized:** confirm the connector was installed, then open a new terminal. Installing just the skills is not enough.
 - **Sign-in expired:** run `makereel auth login` again.
 - **No account or images:** add them in Makereel before asking the assistant to create a slideshow.
 - **An installer triggers a security warning:** stop and verify its publisher and official download source. Do not disable your computer's security protections.

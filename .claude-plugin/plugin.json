@@ -1,6 +1,10 @@
 {
   "name": "makereel",
-  "version": "2.2.0",
-  "description": "Plan approved Scratch and Social carousels through authenticated CLI/MCP, with curated Viral Posts, internal schedules and workspace analytics.",
-  "skills": ["./makereel-generate"]
+  "version": "2.3.0",
+  "description": "Plan campaigns, use Avatars, and art-direct and create approved Scratch and Social carousels through authenticated CLI/MCP, with internal schedules and workspace analytics.",
+  "skills": [
+    "./makereel-slideshows",
+    "./makereel-campaign",
+    "./makereel-avatars"
+  ]
 }

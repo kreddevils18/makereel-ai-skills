@@ -8,9 +8,13 @@
     {
       "name": "makereel",
       "source": "./",
-      "description": "Create editable slideshows with your own images, review the plan, and approve before creation.",
-      "version": "2.2.0",
-      "skills": ["./makereel-generate"]
+      "description": "Plan campaigns, art-direct slideshows with your own images and Avatars, review the plan, and approve before creation.",
+      "version": "2.3.0",
+      "skills": [
+        "./makereel-slideshows",
+        "./makereel-campaign",
+        "./makereel-avatars"
+      ]
     }
   ]
 }
