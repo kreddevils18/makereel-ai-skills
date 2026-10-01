@@ -1,6 +1,6 @@
 ---
 name: avatars
-description: Set up and use Makereel Avatars — private character collections that keep one recurring persona consistent across carousels. Use to define a persona, choose or prepare the persona's photos, bind an Avatar to Social image slots, mention it as @Avatar context, or keep a Scratch deck on one face. Triggers include "avatar", "nhân vật", "persona", "character collection", "same person on every slide", "rotate my model photos". Chains as avatars → slideshows → generate. Not for AI face generation, face swaps, identity-model training, or depicting real people without their consent.
+description: Set up and use Makereel Avatars — private character collections that keep one recurring persona consistent across carousels. Use to define a persona, choose or prepare the persona's photos, bind an Avatar to Social image slots, mention it as @Avatar context, or keep a Scratch deck on one face. Triggers include "avatar", "nhân vật", "persona", "character collection", "same person on every slide", "rotate my model photos". Chains as avatars → slideshows. Not for AI face generation, face swaps, identity-model training, or depicting real people without their consent.
 argument-hint: "[persona or avatar name]"
 metadata:
   version: "2.3.0"
@@ -8,15 +8,14 @@ metadata:
 
 # Makereel Avatars
 
-In Makereel an **Avatar** is a private **character collection**: a set of the user's own images of one persona. Makereel does not generate faces. It gives the persona three jobs:
+In Makereel an **Avatar** is a private **character collection**: a set of the user's own images of one persona. Makereel does not generate faces. It gives the persona two jobs:
 
 1. **Social image slots** — an image binding with `kind: "character"` fills a slot from the Avatar's members in order, continuing after `previousAssetId` when supplied, so a deck or a series rotates through the persona's photos.
 2. **Adaptation context** — `contextReferences` rows `{kind: "avatar", id}` (the web Social brief's `@Avatar` mention) tell the copy adaptation who is speaking. Context references are not image bindings.
-3. **Learning** — when a posted carousel is linked, Makereel records which characters it referenced, so campaigns can compare Avatar-led posts with others.
 
 Orient a new user in one sentence: an Avatar is a set of photos of one persona that you choose; Makereel reuses them consistently but does not create new faces.
 
-Bootstrap as the **generate** skill describes. Everything below except uploads and imports is read-only.
+Bootstrap as the **slideshows** skill describes. Everything below except uploads and imports is read-only.
 
 ## Split identity from scene
 
@@ -62,7 +61,7 @@ Never create an Avatar of a real person without that person's documented consent
 [{ "kind": "avatar", "id": "AVATAR_COLLECTION_ID" }]
 ```
 
-The first file goes to `--image-bindings`; the second to `--context-references` (MCP `contextReferences`). Bind product or scenery slots to other assets or collections. Everything else — analysis approval, reviewed slides, copy mode, plan approval — follows **generate**.
+The first file goes to `--image-bindings`; the second to `--context-references` (MCP `contextReferences`). Bind product or scenery slots to other assets or collections. Everything else — analysis approval, reviewed slides, copy mode, plan approval — follows **slideshows**.
 
 **Scratch**: scenes need explicit `assetId` values, so pick specific members of the Avatar with `assets get` and place them. Use a distinct photo per slide unless repetition is deliberate, and keep wardrobe and setting coherent across the deck.
 
@@ -75,4 +74,4 @@ Before presenting any plan, run the consistency check:
 
 ## Deliver
 
-Report the Avatar's name, member count, the gaps you noticed, and exactly where it is used in the plan (slots bound, context mentioned). Carousel creation, scheduling and delivery links follow **generate**.
+Report the Avatar's name, member count, the gaps you noticed, and exactly where it is used in the plan (slots bound, context mentioned). Carousel creation, scheduling and delivery links follow **slideshows**.

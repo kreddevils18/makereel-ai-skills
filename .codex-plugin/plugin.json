@@ -1,11 +1,11 @@
 {
   "name": "makereel",
   "version": "2.3.0",
-  "description": "Plan campaigns, art-direct slideshows, use Avatars, and create approved Scratch and Social carousels through authenticated CLI/MCP, with internal schedules and workspace analytics.",
+  "description": "Plan campaigns, use Avatars, and art-direct and create approved Scratch and Social carousels through authenticated CLI/MCP, with internal schedules and workspace analytics.",
   "skills": "./",
   "interface": {
     "displayName": "Makereel",
-    "shortDescription": "Campaigns, slideshows and Avatars with approval",
+    "shortDescription": "Campaigns, carousels and Avatars with approval",
     "defaultPrompt": [
       "Plan a Scratch or Social carousel and wait for my approval before creating it",
       "Plan a carousel campaign for my account and wait for my approval of the strategy and calendar"
